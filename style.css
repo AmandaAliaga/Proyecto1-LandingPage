@@ -1,0 +1,428 @@
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&family=Abhaya+Libre:wght@400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "ABeeZee", sans-serif;
+    font-weight: 400;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.grid-container {
+    display: grid;
+    text-align: center;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+}
+
+.flex-container {
+    display: flex;  
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+}
+
+/* Header */
+
+nav > img.logo {
+    width: 30px;
+}
+
+nav.grid-container {
+    margin-top: 50px;
+    grid-template-columns: 100px 1fr 2fr;
+    position: absolute;
+    left: 20px;
+    right: 20px;
+}
+
+ul.grid-container {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+div.controls {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    position: absolute;
+    right: 20px;
+}
+
+#language {
+    height: 35px;
+}
+
+/* CONTAINER 1 (hero) */
+
+div.portada {
+    margin-top: 50px;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+div.portada > img {
+    width: 100vw;
+    height: auto;
+    display: block;
+}
+
+div.portada > div{
+    position: absolute;
+    top: 100px;
+    left: 50px;
+    font-family: "Abhaya+Libre", serif;
+    color: white;
+    justify-items: start;
+    font-size: 2vw; 
+}
+
+/* MODULO CARDS */
+
+.container1{
+    max-width: 90vw;
+    width: 100%;
+    margin: 50px;
+    padding: 0px;
+    gap: 50px;
+    grid-template-columns: repeat(2, 1fr);
+    justify-self: center;
+}
+
+.container1 > article {
+    padding: 40px 30px;
+    min-height: 557px;
+    height: auto;
+    min-width: 600px;
+    background: #D9D9D9;
+    border-radius: 20px;
+    align-self: start;
+    align-content: space-between;
+    justify-items: start;
+}
+
+.car-name {
+    justify-content: start;
+    justify-items: start;
+}
+
+.color-selector{
+    width: 500px;
+    grid-template-columns: repeat(2, 1fr);
+    align-self: center;
+}
+
+.color-selector > button {
+    padding: 12px;
+    width: 100px;
+    justify-self: start;
+    border-radius: 100px;
+    border-style: none;
+    cursor: pointer;
+}
+
+.color-selector > div {
+    justify-self: end;
+}
+
+.color {
+    padding: 3px;
+    margin: 5px;
+    border-radius: 100px;
+    border-color: white;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    }
+
+.color:hover {
+    border: solid black;
+}
+
+.card > img {
+    max-width: 500px;
+    justify-self: center;
+    object-fit: contain;
+}
+
+.Hybrid_suv {
+    height: 300px;
+    justify-self: center;
+}
+
+/* CONTAINER 2 (Find your nearest...)*/
+
+.container2 {
+    margin-bottom: 50px;
+    padding: 50px;
+    height: 300px;
+    justify-items: start;
+    justify-content: start;
+    gap: 20px;
+}
+
+.container2 > h2 {
+    font-size: 3em;
+    text-align: start;
+    width: 500px;
+}
+
+.container2 > p {
+    text-align: start;
+    width: 350px;
+}
+
+/* CONTAINER 3 (Mapa EEUU)*/
+
+.container3 {
+    background-color: pink;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.container3 > img {
+    width: 100vw;
+    max-height: 800px;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+.container3 > div {
+    position: absolute;
+    left: 50px;
+    background-color: rgba(128, 128, 128, 0.8);
+    color: white;
+    padding: 35px;
+    border-radius: 10px;
+    font-size: 2rem;
+    width: 350px;
+    justify-items: start;
+    justify-content: start;
+}
+
+.container3 > div > button {
+    font-size: 10px;
+    border-radius: 25px;
+    padding: 15px 40px 15px 40px;
+    border-style: none;
+    cursor: pointer;
+}
+
+.container3 > div > h4 {
+    padding-bottom: 10px;
+    text-align: start;
+}
+
+
+/* CONTAINER 4 (Gallery características)*/
+
+.container4 {
+    margin-bottom: 50px;
+    padding: 50px;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: start;
+    gap: 50px;
+    overflow-x: auto;
+}
+
+.container4 > article {
+    padding: 40px 30px;
+    height: 500px;
+    width: 500px;
+    background: #D9D9D9;
+    border-radius: 20px;
+    align-self: start;
+    align-content: space-between;
+    justify-items: start;
+}
+
+.container4 > article > button {
+    padding: 12px;
+    width: 100px;
+    justify-self: start;
+    border-radius: 100px;
+    border-style: none;
+    cursor: pointer;
+}
+
+.image_container {
+    width: 400px;
+    height: 270px;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.image_container>img {
+    height: 270px;
+}
+
+/* CONTAINER 5 (Coche rojo)*/
+
+.container5 {
+    /* background-color: pink; */
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.container5 > img {
+    width: 100vw;
+    max-height: 800px;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+.container5 > div {
+    position: absolute;
+    left: 50px;
+    top: 300px;
+    color: white;
+    padding: 50px;
+    width: 500px;
+    justify-items: start;
+    justify-content: start;
+    /* problema con el texto, desaparece por debajo al hacer la pantalla pequeña */
+}
+
+.container5 > div > button {
+    font-size: small;
+    border-radius: 25px;
+    padding: 10px;
+    border-style: none;
+    cursor: pointer;
+}
+
+.container5 > div > h4 {
+    padding-bottom: 10px;
+    text-align: start;
+    font-size: 3em;
+}
+
+.container5 > div > p {
+    text-align: start;
+    width: 300px;
+}
+
+/* CONTAINER 6 (Mercedes Wheel)*/
+
+.container6 {
+    padding: 90px;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.container6 > div {
+    justify-items: start;
+    text-align: start;
+    gap: 20px;
+}
+
+.container6 > div > h4 {
+    font-size: 50px;
+}
+
+.container6 > div > button {
+    border-style: none;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.container6 > img {
+    width: 50vw;
+}
+
+/* FOOTER */
+
+footer{
+    width: 100%;
+    color: white;
+    background-color: black;
+}
+.contact {
+    width: 100%;
+    padding: 50px 200px 50px 200px;
+    grid-template-columns: 2fr 1fr;
+    background-color: rgb(43, 50, 59);
+}
+
+.contact > p {
+    text-align: start;
+}
+
+.contact > button {
+    padding: 12px;
+    width: 150px;
+    border-radius: 100px;
+    border-style: none;
+    cursor: pointer;
+}
+
+.suscription-form, .footer-menu {
+    font-size: small;
+}
+
+.arrow {
+    background-color: white;
+    width: 50px;
+    height: 50px;
+    padding: 11px;
+    margin: 20px;
+    border-radius: 50%;
+    justify-self: end;
+    cursor: pointer;
+}
+
+.suscription-form {
+    padding: 100px;
+    grid-template-rows: repeat(4, 50px);
+    gap: 10px;
+    align-content: space-between;
+}
+
+.email {
+    grid-template-columns: 1fr 1fr;
+}
+
+.check {
+    grid-template-columns: 1fr 6fr;
+    gap: 20px;
+}
+
+.check > input {
+    justify-self: end;
+}
+
+.social-media {
+    grid-template-columns: repeat(5, 30px);
+}
+
+.footer-menu {
+    width: 100%;
+    margin-bottom: 50px;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: baseline;
+    text-align: left;
+}
+
+.footer-menu > section > h3 {
+    font-size: 20px;
+    padding-bottom: 20px;
+}
