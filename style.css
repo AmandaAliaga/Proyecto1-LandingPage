@@ -71,6 +71,7 @@ div.portada {
     height: auto;
     overflow: hidden;
     box-sizing: border-box;
+    position: relative;
 }
 
 div.portada > img {
@@ -81,7 +82,7 @@ div.portada > img {
 
 div.portada > div{
     position: absolute;
-    top: 100px;
+    top: 50px;
     left: 50px;
     font-family: "Abhaya+Libre", serif;
     color: white;
@@ -184,7 +185,7 @@ div.portada > div{
     width: 350px;
 }
 
-/* CONTAINER 3 (Mapa EEUU)*/
+/* CONTAINER 3 (Mapa)*/
 
 .container3 {
     background-color: pink;
@@ -204,7 +205,7 @@ div.portada > div{
 
 .container3 > div {
     position: absolute;
-    left: 50px;
+    left: 60px;
     background-color: rgba(128, 128, 128, 0.8);
     color: white;
     padding: 35px;
@@ -291,9 +292,9 @@ div.portada > div{
 
 .container5 > div {
     position: absolute;
-    left: 50px;
-    top: 300px;
-    color: white;
+    left: 20px;
+    top: 50px;
+    color: red;
     padding: 50px;
     width: 500px;
     justify-items: start;
@@ -312,7 +313,7 @@ div.portada > div{
 .container5 > div > h4 {
     padding-bottom: 10px;
     text-align: start;
-    font-size: 3em;
+    font-size: 3rem;
 }
 
 .container5 > div > p {
@@ -399,11 +400,17 @@ footer{
 
 .email {
     grid-template-columns: 1fr 1fr;
+    margin: 20px;
+    padding: 15px;
+    border: solid 2px white;
+    width: 300px;
+    border-radius:20px;
 }
 
 .check {
     grid-template-columns: 1fr 6fr;
-    gap: 20px;
+    gap: 10px;
+    margin: 20px;
 }
 
 .check > input {
@@ -412,7 +419,7 @@ footer{
 
 .social-media {
     grid-template-columns: repeat(5, 30px);
-}
+   }
 
 .footer-menu {
     width: 100%;
